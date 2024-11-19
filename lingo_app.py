@@ -1,14 +1,7 @@
 import streamlit as st 
 import joblib
-import pickle
-import pandas as pd
-import matplotlib.pyplot as plt
 import re
 import requests
-from sklearn.preprocessing import LabelEncoder
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import MultinomialNB
 
 #load all model, tokenizer and labelencoder
 model = joblib.load('multinomialnb.pkl')
